@@ -1,0 +1,26 @@
+{
+  "name": "my-package",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "dist/my-package.js",
+  "module": "src/index.js",
+  "unpkg": "dist/my-package.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/my-package.js",
+      "import": "./src/index.js"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
